@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>NTPC Simhadri</title>
+<link rel="stylesheet" href="/static/ntpc.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></head>
+<body><div class="container mt-5">
+{% if news %}
+<h2 class="text-primary">{{ news[1] }}</h2>
+<p>{{ news[2] }}</p>
+<p><strong>From:</strong> {{ news[3] }} <strong>To:</strong> {{ news[4] }}</p>
+{% else %}
+<h2>Welcome to NTPC Simhadri</h2>
+<p>No news posted yet.</p>
+{% endif %}
+</div></body></html>
